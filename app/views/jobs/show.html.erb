@@ -1,0 +1,36 @@
+<h2><%= @job.title %></h2>
+<hr></hr>
+<table>
+  <tr>
+    <td>
+      <p>Empresa<p>
+    </td>
+    <td>
+      <p><%= @job.company %></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Localização</p>
+    </td>
+
+    <td>
+      <p><%= @job.location %></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>Categoria</p>
+    </td>
+
+    <td>
+      <p><%= @job.category %></p>
+    </td>
+  </tr>
+      <p>Descrição</p>
+  <tr>
+    <p><%= @job.description %></p>
+  </tr>
+</table>

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 feature 'Visitor visits job details' do
   scenario 'successfully' do
-    job = Job.create(title: 'Vaga de Dev',
+    job = Job.create(title: 'QA',
                category: 'Desenvolvedor',
                company: 'Campus Code',
                description: 'Dev Junior Rails com ao menos um projeto',
