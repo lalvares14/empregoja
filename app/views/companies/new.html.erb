@@ -1,0 +1,15 @@
+<%= form_for @company do |f| %>
+<hr></hr>
+  <%= f.label :name %>
+  <%= f.text_field :name %> <br/>
+  <%= f.label :location %>
+  <%= f.text_field :location%> <br/>
+  <%= f.label :cnpj %>
+  <%= f.text_field :cnpj%> <br/>
+  <%= f.label :mail %>
+  <%= f.text_field :mail%> <br/>
+  <%= f.label :phone %>
+  <%= f.text_field :phone%> <br/>
+  <%= f.submit 'Criar Empresa'%>
+  <%= link_to 'Voltar', root_path %>
+<% end %>
