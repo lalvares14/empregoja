@@ -1,3 +1,17 @@
+
+<% if @job.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@job.errors.count, "error") %> prohibited
+      this article from being saved:
+    </h2>
+
+      <% @job.errors.full_messages.each do |msg| %>
+        <p><%= msg %></p>
+      <% end %>
+  </div>
+<% end %>
+
 <%= form_for @job do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
