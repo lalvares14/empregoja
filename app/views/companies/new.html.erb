@@ -1,11 +1,23 @@
+<div id="errors">
+<% if @company.errors.any? %>
+<h2>Warning! All fields are mandatory.</h2>
+<ul>
+  <% @company.errors.full_messages.each do |comp| %>
+    <li><%= comp %></li>
+  <% end %>
+</ul>
+<% end %>
+</div>
+
 <%= form_for @company do |f| %>
+<hr></hr>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, :placeholder => 'Nome' %> <br/>
   <%= f.label :location %>
-  <%= f.text_field :location %>
+  <%= f.text_field :location, :placeholder => 'Localização'  %> <br/>
   <%= f.label :mail %>
-  <%= f.text_field :mail %>
+  <%= f.text_field :mail, :placeholder => 'E-mail'  %> <br/>
   <%= f.label :phone %>
-  <%= f.text_field :phone %>
+  <%= f.text_field :phone, :placeholder => 'Telefone'  %> <br/>
   <%= f.submit 'Criar Empresa' %>
 <% end %>
