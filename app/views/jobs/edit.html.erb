@@ -3,8 +3,9 @@
 <ul>
   <% @job.errors.full_messages.each do |msg| %>
     <li><%= msg %></li>
-    <% end %>
+  <% end %>
 </ul>
 <% end %>
 </div>
-<%= render partial: "form", locals: {submission_button: 'Criar Vaga'} %>
+
+<%= render partial: "form", locals: {submission_button: 'Atualizar Vaga'} %>
