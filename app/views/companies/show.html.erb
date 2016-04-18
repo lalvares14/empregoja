@@ -5,3 +5,8 @@
 <p><strong>Telefone: </strong><%= @company.phone %></p>
 
 <%= render @company.jobs %>
+
+
+<% if @company.premium? %>
+<p><strong>Empresa Premium<strong></p>
+<% end %>
