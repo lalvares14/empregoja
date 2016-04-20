@@ -1,0 +1,9 @@
+<h1><%= @contract.name %></h1>
+<h2>Vagas por tipos de contratação</h2>
+<% @contract.jobs.each do |job| %>
+  <p><%= job.title %></p>
+  <p><%= job.location %></p>
+  <p><%= job.category.name %></p>
+  <p><%= job.description %></p>
+  <p><%= job.company.try(:name) %></p>
+<% end %>

@@ -1,3 +1,3 @@
 class Contract < ActiveRecord::Base
-  has_many :job
+  has_many :jobs
 end

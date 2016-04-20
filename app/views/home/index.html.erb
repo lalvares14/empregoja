@@ -27,3 +27,9 @@
     <%= link_to category.name, category %>
   <% end %>
 </aside>
+<aside>
+  <h3>Vagas por tipo de contrato</h3>
+  <% @contracts.each do |contract| %>
+    <%= link_to contract.name, contract %>
+  <% end %>
+</aside>
