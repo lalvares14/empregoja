@@ -8,6 +8,7 @@
 <p><strong>Empresa:</strong> <%= @job.company.name%></p>
 <p><strong>Descrição Completa:</strong> <%= @job.description %></p>
 <p><strong>Localização:</strong> <%= @job.location %></p>
+<p><strong>Tipo de Contrato:</strong> <%= @job.contract.try(:name) %></p>
 <% if @job.featured? %>
   <strong>Vaga em Destaque</strong>
 <% end %>
